@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,21 +12,32 @@
 </head>
 <body class="body-text c-body">
     <header class="header">
-        <div class="container flex">
+        <div class="container flex mobile-container">
             <nav class="header-nav">
                 <a href="./index.html" class="logo nounderline logo-text col-iris">Web<span class="c-navy-blue">Studio</span></a>
-                <ul class="menu no-dot body-medium-text">
+                <ul class="menu no-dot body-medium-text mobile-hidden">
                     <li class=""><a href="./index.html" class="menu-item nounderline c-navy-blue interactive transition currently selected">Studio</a></li>
                     <li><a href="" class="menu-item nounderline c-navy-blue interactive transition">Portfolio</a></li>
                     <li><a href="" class="menu-item nounderline c-navy-blue interactive transition">Contacts</a></li>
                 </ul>
             </nav>
-            <address class="font-style-normal">
+            <address class="font-style-normal mobile-hidden">
                 <ul class="address-items no-dot">
                     <li><a class="nounderline c-body interactive transition" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="nounderline c-body interactive transition" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="btn-sandwich">
+                <svg viewBox="672 0 18 4"  aria-hidden="true">
+                    <use class="ico-sandwich" x="0" y="0" href="./images/icons.svg#icon-dash"></use>
+                </svg>
+                <svg  viewBox="672 0 18 4"  aria-hidden="true">
+                    <use class="ico-sandwich" x="0" y="0" href="./images/icons.svg#icon-dash"></use>
+                </svg>
+                <svg  viewBox="672 0 18 4"  aria-hidden="true">
+                    <use class="ico-sandwich" x="0" y="0" href="./images/icons.svg#icon-dash"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -40,14 +52,14 @@
         <section class="section-features">
             <div class="container">
                 <h2 class="visually-hidden">Features</h2>
-                <ul class="flex gap-features no-dot padding-left-none">
+                <ul class="flex gap-features no-dot padding-left-none mobile-column">
                     <li class="even-width">
-                        <div class="icon-card flex">
+                        <div class="icon-card flex mobile-hidden tablet-hidden">
                             <svg viewBox="336 0 32 32" width="64" height="64" aria-hidden="true">
                                 <use x="0" y="0" href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="margin-features-header c-navy-blue">Strategy</h3>
+                        <h3 class="h2 margin-features-header c-navy-blue">Strategy</h3>
                         <p class="body-text">
                             Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
@@ -55,12 +67,12 @@
                     </li>
 
                     <li class="even-width">
-                        <div class="icon-card flex">
+                        <div class="icon-card flex mobile-hidden tablet-hidden">
                             <svg viewBox="240 0 32 32" width="64" height="64" aria-hidden="true">
                                 <use x="0" y="0" href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="margin-features-header c-navy-blue">Punctuality</h3>
+                        <h3 class="h2 margin-features-header c-navy-blue">Punctuality</h3>
                         <p class="body-text">
                             Bring the key message to the brand's audience
                             for the best price within the shortest possible time.
@@ -68,12 +80,12 @@
                     </li>
 
                     <li class="even-width">
-                        <div class="icon-card flex">
+                        <div class="icon-card flex mobile-hidden tablet-hidden">
                             <svg viewBox="288 0 32 32" width="64" height="64" aria-hidden="true">
                                 <use x="0" y="0" href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="margin-features-header c-navy-blue">Diligence</h3>
+                        <h3 class="h2 margin-features-header c-navy-blue">Diligence</h3>
                         <p class="body-text">
                             Research and confirm brands that present the strongest
                             digital growth opportunities and minimize risk.
@@ -81,12 +93,12 @@
                     </li>
 
                     <li class="even-width">
-                        <div class="icon-card flex">
+                        <div class="icon-card flex mobile-hidden tablet-hidden">
                             <svg viewBox="192 0 32 32" width="64" height="64" aria-hidden="true">
                                 <use x="0" y="0" href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="margin-features-header c-navy-blue">Technologies</h3>
+                        <h3 class="h2 margin-features-header c-navy-blue">Technologies</h3>
                         <p class="body-text">
                             Design practice focused on digital experiences.
                             We bring forth a deep passion for problem-solving.
@@ -99,7 +111,7 @@
         <section class="section-team bc-cloud">
             <div class="container direction-column">
                 <h2 class="team-heading text-center c-navy-blue">Our Team</h2>
-                <ul class="flex team-gap no-dot padding-left-none">
+                <ul class="flex team-gap no-dot padding-left-none mobile-column">
                     <li class="team-card even-width bc-white">
                         <img src="./images/team1.jpg" alt="Product Designer" width=264 height=260>
                         <div class="team-card-text">
@@ -264,7 +276,7 @@
         <section class="section-portfolio">
             <div class="container direction-column">
                 <h2 class="portfolio-heading text-center c-navy-blue">Our Portfolio</h2>
-                <ul class="flex flex-wrap portfolio-gap no-dot padding-left-none">
+                <ul class="flex flex-wrap portfolio-gap no-dot padding-left-none mobile-column">
                     <li class="project-card shadow-transition portfolio-even-width">
                         <div class="hover-container">
                             <img src="./images/portfolio1.jpg" alt="Banking App" width=360 height=300 />
@@ -336,7 +348,7 @@
     </main>
 
     <footer class="footer flex c-white bc-dark">
-        <div class="container flex footer-style">
+        <div class="container flex footer-style mobile-column">
             <div class="footer-logo-block">
                 <a href="./index.html" class="footer-logo nounderline logo-text col-iris">Web<span class="c-cloud">Studio</span></a>
                 <p class="footer-text body-text c-cloud">
@@ -379,7 +391,7 @@
             </div>
             <div class="subscribe-block">
                 <p class="social-p">Subscribe</p>
-                <form class="subscribe flex">
+                <form class="subscribe flex mobile-column">
                     <label class="label-subscribe flex" for="subscribe">
                         <input class="footer-input bc-dark" name="subscribe" id="subscribe" type="email" placeholder="E-mail"/>
                     </label>
@@ -455,6 +467,67 @@
 
             </form>
         </div>
+    </div>
+    <div class="header-menu">
+        <button class="menu-close flex" type="button">
+            <svg class="icon-close" viewBox="432 0 32 32" width="8" height="8" aria-hidden="true">
+                <use x="0" y="0" href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-nav">
+            <ul class="mobile-menu no-dot padding-left-none">
+                <li>
+                    <a href="" class="nounderline h2">Studio</a>
+                </li>
+                <li>
+                    <a href="" class="nounderline h2">Portfolio</a>
+                </li>
+                <li>
+                    <a href="" class="nounderline h2">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-bottom-block">
+            <address class="font-style-normal">
+                <ul class="address-items padding-left-none no-dot">
+                    <li><a class="nounderline c-body interactive transition" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="nounderline c-body interactive transition" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+
+            <ul class="menu-social-links flex no-dot padding-left-none">
+                <li class="icon-size">
+                        <a class="btn-round-footer btn-transition" href="" >
+                            <svg class="fill" viewBox="144 0 32 32" width="24" height="24" aria-hidden="true">
+                                <use x="0" y="0" href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                <li class="icon-size">
+                        <a class="btn-round-footer btn-transition" href="" >
+                            <svg class="fill" viewBox="96 0 32 32" width="24" height="24" aria-hidden="true">
+                                <use x="0" y="0" href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                <li class="icon-size">
+                        <a class="btn-round-footer btn-transition" href="" >
+                            <svg class="fill" viewBox="48 0 32 32" width="24" height="24" aria-hidden="true">
+                                <use x="0" y="0" href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                <li class="icon-size">
+                        <a class="btn-round-footer btn-transition" href="" >
+                            <svg class="fill" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                                <use x="0" y="0" href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+            </ul>
+            </div>
+
+
     </div>
 <script type="application/javascript" src="app.js"></script>
 </body>
