@@ -701,17 +701,24 @@ address{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .mobile-container{
         padding: 16px;
         margin: 0;
         width: 100%;
     }
+    .header{
+        display: flex;
+        justify-content: center;
+    }
 
+    .section{
+        margin-left: auto;
+        max-width: 320px;
+    }
 
-    .header .container{
-        width: unset;
-        min-width: 320px;
+    .container{
+        max-width: 320px;
     }
     .mobile-hidden{
         display: none;
@@ -953,9 +960,12 @@ address{
     .btn-sandwich{
         display: none;
     }
+    .section{
+        margin-left: auto;
+        width: 768px;
+    }
     .container{
-        width: unset;
-
+        max-width: 768px;
     }
     .address-items{
         flex-direction: column;
@@ -977,6 +987,7 @@ address{
         max-width: 768px;
     }
     .gap-features{
+        width: 736px;
         display: grid;
        grid-template-columns: 1fr 1fr;
         margin-top: 0;
@@ -999,6 +1010,7 @@ address{
     }
 
     .portfolio-gap{
+        width: 736px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 0;
@@ -1028,6 +1040,7 @@ address{
 
     }
     .section-team .container{
+        max-width: 552px;
         padding-right: 0;
         padding-left: 0;
         margin-left: 0;
@@ -1035,7 +1048,8 @@ address{
     }
 
     .footer{
-        padding-left: 108px;
+        display: flex;
+        justify-content: center;
         padding-top:  96px;
         padding-bottom: 96px;
         gap: 24px;
@@ -1047,10 +1061,10 @@ address{
         margin-right: 0;
     }
     .footer .container{
+        max-width: 552px;
         flex-wrap: wrap;
-        max-width: 768px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 16px;
+        padding-right: 16px;
         gap:24px;
         row-gap: 72px;
     }
@@ -1058,9 +1072,15 @@ address{
 
 }
 @media (min-width: 1158px)  {
+    .section{
+        min-width: 1158px;
+    }
     .container{
+        max-width: unset;
         min-width: 1158px;
         display: flex;
+        justify-content: center;
+
     }
     .address-items{
         display: flex;
@@ -1139,9 +1159,6 @@ address{
 }
 
 @media (min-resolution: 192dpi) {
-    .back-img {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x2/background1.jpg);
-    }
     .team-one{
         content: url(../images/x2/team1.jpg);
     }
@@ -1154,22 +1171,34 @@ address{
     .team-four{
         content: url(../images/x2/team4.jpg);
     }
-    .img-port-one{
-        content: url(../images/x2/portfolio1.jpg);
+}
+@media (max-width: 767px) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x1/background1-mb.jpg);
     }
-    .img-port-two{
-        content: url(../images/x2/portfolio2.jpg);
+}
+@media (min-width: 768px) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x1/background1-tb.jpg);
     }
-    .img-port-three{
-        content: url(../images/x2/portfolio3.jpg);
+}
+@media (min-width: 1158px) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x1/background1.jpg);
     }
-    .img-port-four{
-        content: url(../images/x2/portfolio4.jpg);
+}
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x2/background1-mb.jpg);
     }
-    .img-port-five{
-        content: url(../images/x2/portfolio5.jpg);
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x2/background1-tb.jpg);
     }
-    .img-port-six{
-        content: url(../images/x2/portfolio6.jpg);
+}
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .back-img {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/x2/background1.jpg);
     }
 }
